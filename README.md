@@ -1,10 +1,10 @@
-# IRC Server Development with RFC Protocol Compliance
+# IRC Server
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0b600534-672e-4cf3-8432-b1a877e263bb" alt="designirc-Photoroom-img" width="250"/>
 </p>
 
-**Ft_irc (Internet Relay Chat)**
+**FT_IRC: An IRC Server following the RFC Protocol Compliance**
 
 The aim of this project is to create our own IRC server in C++. IRC is a text-based communication protocol used for real-time messaging.
 
@@ -108,7 +108,7 @@ Developed a fully compliant IRC server based on the [RFC 2119](https://modern.ir
 Managed connections, message parsing, and user commands using low-level socket programming.
 
 - Concurrency:
-Implemented multi-client support using asynchronous I/O to handle multiple connections simultaneously.
+Implemented multi-client support using asynchronous I/O to handle multiple connections simultaneously. [poll](https://pubs.opengroup.org/onlinepubs/009604599/functions/poll.html)
 
 - Protocol Implementation:
 Followed the IRC RFC 2119 standards to ensure correct command handling, error messaging, and client-server communication.
@@ -136,3 +136,4 @@ Here are some references that you may find helpful:
 - [TCP/IP Sockets in C](https://beej.us/guide/bgnet/html/)
 - [RFC 1459 IRC :Replies](http://www.iprelax.fr/irc/irc_rfcus6.php)
 - [RFC 2119](https://modern.ircdocs.horse/)
+- [poll](https://pubs.opengroup.org/onlinepubs/009604599/functions/poll.html)
