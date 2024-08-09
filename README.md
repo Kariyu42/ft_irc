@@ -1,7 +1,12 @@
-# Ft_irc (Internet Relay Chat)
+# IRC Server Development with RFC Protocol Compliance
 
-The aim of this project is to create our own IRC server in C++98. <br>
-IRC is a text-based communication protocol used for real-time messaging. <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0b600534-672e-4cf3-8432-b1a877e263bb" alt="designirc-Photoroom-img" width="250"/>
+</p>
+
+**Ft_irc (Internet Relay Chat)**
+
+The aim of this project is to create our own IRC server in C++. IRC is a text-based communication protocol used for real-time messaging.
 
 ***Developed on Linux***
 
@@ -14,10 +19,9 @@ IRC is a text-based communication protocol used for real-time messaging. <br>
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Definitions](#definitions)
 - [References](#references)
+- [Technical Skills](#technical-skills)
 
 ## Installation
 
@@ -97,6 +101,30 @@ int setsockopt(int sockfd, int level, int optname, const void *optval, socklen_t
 4. `optval` => pointer to the value of the option.
 4. `optlen` => size of the option value.
 
+## Technical Skills:
+
+- Network Programming:
+Developed a fully compliant IRC server based on the [RFC 2119](https://modern.ircdocs.horse/) protocol.
+Managed connections, message parsing, and user commands using low-level socket programming.
+
+- Concurrency:
+Implemented multi-client support using asynchronous I/O to handle multiple connections simultaneously.
+
+- Protocol Implementation:
+Followed the IRC RFC 2119 standards to ensure correct command handling, error messaging, and client-server communication.
+
+- Error Handling and Debugging:
+Utilized tools such as Valgrind to debug and handle runtime errors, memory leaks, and segmentation faults.
+
+- Security:
+Implemented basic security features like password protection, user authentication, and channel modes to control access and permissions.
+
+- Testing:
+Conducted extensive testing, including unit tests and stress tests, to ensure the server’s stability and protocol adherence under various scenarios.
+
+- Version Control:
+Used Git for version control, enabling effective collaboration and code management within the team.
+
 ## References
 
 Here are some references that you may find helpful:
@@ -107,3 +135,4 @@ Here are some references that you may find helpful:
 - [Linux man pages for setsockopt](https://man7.org/linux/man-pages/man2/setsockopt.2.html)
 - [TCP/IP Sockets in C](https://beej.us/guide/bgnet/html/)
 - [RFC 1459 IRC :Replies](http://www.iprelax.fr/irc/irc_rfcus6.php)
+- [RFC 2119](https://modern.ircdocs.horse/)
